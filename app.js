@@ -56,6 +56,7 @@ newquestion.save()
     res.sendFile('sucees.html', { root: __dirname });
 })
 .catch((error) => {
+    console.log(error)
     res.sendFile('error.html', { root: __dirname });
   });
  
