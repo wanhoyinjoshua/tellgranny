@@ -31,6 +31,7 @@
   }
 
   .center{
+    padding: 5px;
     text-align: center;
     background-color: rgb(255, 197, 89);color: rgb(0, 0, 0);
     
@@ -73,7 +74,7 @@ padding: 0;
 }
 
 #banner{        
-          content:url("./sqaure.png");
+          content:url("./banner1.png");
           
           
       } 
@@ -98,9 +99,15 @@ padding: 0;
 input{
     width: 90%}
     #big{
-        height:150px !important
+        height:150px !important;
+        background-color: rgb(231, 231, 231);
+        
     }
 
+#button123{
+  display: table;
+  margin: 0 auto;
+}
 
 
     #myBtn {
@@ -152,8 +159,50 @@ input{
     <form action="/submitquestion" method="post"  onsubmit="myButton.disabled = true; return true;">
         
            
-        <input id="big" class="form-control" id="question"name="question" type="text" required placeholder=" Ask anything or say anything you want."><br>
+        <input id="big" class="form-control" id="question"name="question" type="text" required placeholder=" Ask absolutely anything!"><br>
 
+
+        <div class="form-group">
+
+        
+
+          <div >
+              In order to thank you for your response, a digital copy of the end product (which might contain the response to your question) will be emailed to you upon completion if you would like to receive it. This is completely optional.<br><br>
+              <input class="form-control" placeholder="abc@gmail.com" id="email"name="email" type="text" >
+  
+          </div>
+          </div>
+          <div class="form-group" >
+          <div  class="middle">
+              
+              <br>
+              <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+              required
+            />
+              <label id="chec"class="form-check-label smaller" for="flexCheckChecked" >
+                  By checking this box, you consent to me using the information you provided for the purpose of this project.
+                  The database stores nothing but your question and no personal details will be made public.
+              </label>
+              
+             
+          </div>
+          <br>
+  
+          <div class="form-group">
+           
+              <button id ="button123"class="btn btn-primary btn-lg" type="submit" name="myButton" >Submit</button>
+  
+          </div>
+       
+  
+  
+      </div>
+      <br>
+      <br>
         
         <div class="form-group">
           <div class="accordion" id="accordionExample">
@@ -217,44 +266,7 @@ input{
         
         </div>
         <br>
-        <div class="form-group">
-
         
-
-        <div >
-            In order to thank you for your response, a digital copy of the end product (which might contain the response to your question) will be emailed to you upon completion if you would like to receive it. This is completely optional.<br><br>
-            <input class="form-control" placeholder="abc@gmail.com" id="email"name="email" type="text" >
-
-        </div>
-        </div>
-        <div class="form-group" >
-        <div  class="middle">
-            
-            <br>
-            <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckChecked"
-            required
-          />
-            <label class="form-check-label smaller" for="flexCheckChecked" >
-                By checking this box, you consent to me using the information you provided for the purpose of this project.
-                The database stores nothing but your question and no personal details will be made public.
-            </label>
-            
-           
-        </div>
-
-        <div class="form-group">
-         
-            <button id ="button123"class="btn btn-primary btn-lg" type="submit" name="myButton" >Submit</button>
-
-        </div>
-     
-
-
-    </div>
       
         
     
